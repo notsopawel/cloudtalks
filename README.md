@@ -1,9 +1,27 @@
-## Action plan
-1. Create 3xEC2 instances, with different names(tag) and instance types.
-2. Parametrize "Name" tag value and instance type.
-3. Prepare the code as a module so that different environments might use the same codebase.
-4. Follow the process that code should be placed on a dedicated branch, approved, and merged to the main branch.
-5. Update README file status and howto section.
+## Action 
+1. Prepare the code to provision 3xEC2 instances;
+- codebase execution should guarantee same results;
+- code should be prepared in the way that allow us to use it as CI/CD pipeline;
+- propose solution to deploy same codebase across different environmets;
+- only two parameters are required: Name and Instance type
+```
+instances  = [
+{
+    "Name" : "EC2_1"
+    "Type" : "t2.micro"
+},
+{
+    "Name" : "EC2_2"
+    "Type" : "t2.small"
+},
+{
+    "Name" : "EC2_3"
+    "Type" : "t2.mini"
+}
+]
+```
+2. Please follow PR to merge the code;
+5. Update README file status and howto sections.
 
 ## Status
 - [ ] EC2 instances;
@@ -12,4 +30,4 @@
 
 
 ## HowTo
-Please provide example module usage with links to the applied resources documentation.
+Please please here short instruction how to execute the code, with examples.
