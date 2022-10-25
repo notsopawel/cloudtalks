@@ -1,8 +1,8 @@
-## Action 
+## ActionPlan
 1. Prepare the code to provision 3xEC2 instances;
-- codebase execution should guarantee same results;
-- code should be prepared in the way that allow us to use it as CI/CD pipeline;
-- propose solution to deploy same codebase across different environmets;
+- codebase execution should guarantee the same results;
+- code should be prepared in a way that allows us to use it as CI/CD pipeline;
+- propose a solution to deploy the same codebase across different environments;
 - only two parameters are required: Name and Instance type
 ```
 instances  = [
@@ -30,4 +30,4 @@ instances  = [
 
 
 ## HowTo
-Please please here short instruction how to execute the code, with examples.
+Please place here short instructions, on how to execute the code, with examples.
