@@ -17,11 +17,11 @@ storage_accounts = [
 },
 {
     "Name" : "stvcccloudtalks222"
-    "Type" : "GRS"
+    "Replication Type" : "GRS"
 },
 {
     "Name" : "stvcccloudtalks333"
-    "Type" : "LRS"
+    "Replication Type" : "LRS"
 }
 ]
 ```
