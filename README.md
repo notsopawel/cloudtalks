@@ -38,5 +38,5 @@ storage_accounts = [
 
 ## HowTo
 Please place here short instructions, on how to execute the code, with examples.
-![image](https://user-images.githubusercontent.com/81424793/201305277-f0909793-64bf-4b99-a96d-dd15302e1f5e.png)
+
 
