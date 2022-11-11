@@ -1,22 +1,28 @@
-## ActionPlan
-1. Prepare the code to provision 3xEC2 instances;
-- codebase execution should guarantee the same results;
+
+## Plan
+1. Prepare the code and deploy and remove 3xAzure Storage Accounts;
+
+Requirements:
+- codebase execution should guarantee the same results each time;
 - code should be prepared in a way that allows us to use it as CI/CD pipeline;
 - propose a solution to deploy the same codebase across different environments;
-- only two parameters are required: Name and Instance type
+- only two parameters are required;
+- all those three might be placed within a single RG;
+- disable public network access on those accounts;
+
 ```
-instances  = [
+storage_accounts = [
 {
-    "Name" : "EC2_1"
-    "Type" : "t2.micro"
+    "Name" : "stvcccloudtalks111"
+    "Replication Type" : "LRS"
 },
 {
-    "Name" : "EC2_2"
-    "Type" : "t2.small"
+    "Name" : "stvcccloudtalks222"
+    "Replication Type" : "GRS"
 },
 {
-    "Name" : "EC2_3"
-    "Type" : "t2.mini"
+    "Name" : "stvcccloudtalks333"
+    "Replication Type" : "LRS"
 }
 ]
 ```
@@ -24,12 +30,13 @@ instances  = [
 3. Update README file status and howto sections.
 
 ## Status
-- [ ] EC2 instances;
-- [ ] Branch&PR;
-- [ ] Environments separation;
+- [ ] Code is created
+- [ ] Infra is deployed
+- [ ] Environments separation proposed;
+- [ ] Infra is removed
 
 
 ## HowTo
 Please place here short instructions, on how to execute the code, with examples.
+![image](https://user-images.githubusercontent.com/81424793/201305277-f0909793-64bf-4b99-a96d-dd15302e1f5e.png)
 
-![image](https://user-images.githubusercontent.com/81424793/201279425-acb01a92-2867-40cb-91ae-376a62c52a51.png)
