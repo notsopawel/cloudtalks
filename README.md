@@ -3,12 +3,12 @@
 1. Prepare the code and deploy and remove 3xAzure Storage Accounts;
 
 Requirements:
-- codebase execution should guarantee the same results each time;
+- proposed codebase should guarantee the same results each time;
 - code should be prepared in a way that allows us to use it as CI/CD pipeline;
 - propose a solution to deploy the same codebase across different environments;
-- only two parameters are required;
 - all those three might be placed within a single RG;
 - disable public network access on those accounts;
+- only two parameters are required, Name and Replication Type;
 
 ```
 storage_accounts = [
