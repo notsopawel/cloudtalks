@@ -1,14 +1,14 @@
-# Plan
+## Plan
 1. propose the solution for two stories, 
 2. prepare the code, 
 3. update Status and How-to sections,
 4. create pull request to finally marge it into `main` branch,
 
-### Story1
+## Story1
 ---
 3a. Prepare the code to  deploy and remove three azure storage accounts;
 
-Requirements:
+### Requirements:
 - codebase execution should guarantee the same results each time;
 - code should be prepared in a way that **Name** and **Replication Type** are parametrized;
 - only those two parameters are required: **Name** and **Replication Type**
@@ -33,27 +33,27 @@ storage_accounts = [
 ]
 ```
 
-## Status
+### Status
 - [ ] code is prepared
 - [ ] environments separation proposed;
 
-## How-To
+### How-To
 Please place below short instruction, on how to execute the code, with examples.
 
-### Story2
+## Story2
 ---
 3b. Prepare the code to create Azure Resource Group wihtin desired Azure Subscription;
 
-Requirements:
+### Requirements:
 - solution should be exposed as a self service offering;
 - every authenticated and authorized user should be able to create such RG via API call;
 - propose authorization method to verify if customer has proper right towards subjected subscription;
 - code should be prepared in a way that  resource group **Name** is randomized;
 - only one parameter is required **SubscriptionID*;
 
-## Status
+### Status
 - [ ] solution is proposed,
 - [ ] code is created;
 
-## HowTo
+### HowTo
 Please place below short instruction, on how to execute the code, with examples.
