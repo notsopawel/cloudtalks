@@ -6,7 +6,7 @@
 
 ## Story1
 ---
-3a. Prepare the code to  deploy and remove three azure storage accounts;
+5a. Prepare the code to  deploy and remove three azure storage accounts;
 
 ### Requirements:
 - codebase execution should guarantee the same results each time;
@@ -42,7 +42,7 @@ Please place below short instruction, on how to execute the code, with examples.
 
 ## Story2
 ---
-3b. Prepare the code to create Azure Resource Group wihtin desired Azure Subscription;
+5b. Prepare the code to create Azure Resource Group wihtin desired Azure Subscription;
 
 ### Requirements:
 - solution should be exposed as a self service offering;
