@@ -1,6 +1,6 @@
 ## ActionPlan
 1. Prepare the code to provision 3xEC2 instances;
-- codebase execution should guarantee the same results;
+- codebase execution should guarantee the same results, each time;
 - code should be prepared in a way that allows us to use it as CI/CD pipeline;
 - propose a solution to deploy the same codebase across different environments;
 - only two parameters are required: Name and Instance type
