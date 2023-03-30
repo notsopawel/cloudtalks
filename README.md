@@ -1,34 +1,60 @@
-## ActionPlan
-1. Prepare the code to provision 3xEC2 instances;
-- codebase execution should guarantee the same results, each time;
-- code should be prepared in a way that allows us to use it as CI/CD pipeline;
-- propose a solution to deploy the same codebase across different environments;
-- only two parameters are required: Name and Instance type
+# Plan
+1. propose the solution for two stories, 
+2. prepare the code, 
+3. update Status and How-to sections,
+4. create pull request to finally marge it into `main` branch,
+
+### Story1
+---
+3a. Prepare the code to  deploy and remove three azure storage accounts;
+
+Requirements:
+- codebase execution should guarantee the same results each time;
+- code should be prepared in a way that **Name** and **Replication Type** are parametrized;
+- only those two parameters are required: **Name** and **Replication Type**
+- propose a solution which allows you to verify results in isolated Non-Prod and finally deploy in Prod env;
+- all those three might be placed within a single RG;
+- disable public network access on those accounts;
+
 ```
-instances  = [
+storage_accounts = [
 {
-    "Name" : "EC2_1"
-    "Type" : "t2.micro"
+    "Name" : "stvcccloudtalks111"
+    "Replication Type" : "LRS"
 },
 {
-    "Name" : "EC2_2"
-    "Type" : "t2.small"
+    "Name" : "stvcccloudtalks222"
+    "Replication Type" : "GRS"
 },
 {
-    "Name" : "EC2_3"
-    "Type" : "t2.mini"
+    "Name" : "stvcccloudtalks333"
+    "Replication Type" : "LRS"
 }
 ]
 ```
-2. Please follow PR to merge the code;
-3. Update README file status and howto sections.
 
 ## Status
-- [ ] EC2 instances;
-- [ ] Branch&PR;
-- [ ] Environments separation;
+- [ ] code is prepared
+- [ ] environments separation proposed;
 
+## How-To
+Please place below short instruction, on how to execute the code, with examples.
+
+### Story2
+---
+3b. Prepare the code to create Azure Resource Group wihtin desired Azure Subscription;
+
+Requirements:
+- solution should be exposed as a self service offering;
+- every authenticated and authorized user should be able to create such RG via API call;
+- propose authorization method to verify if customer has proper right towards subjected subscription;
+- code should be prepared in a way that  resource group **Name** is randomized;
+- only one parameter is required **SubscriptionID*;
+
+## Status
+- [ ] solution is proposed,
+- [ ] code is created;
 
 ## HowTo
-Please place here short instructions, on how to execute the code, with examples.
-
+Please place below short instruction, on how to execute the code, with examples.
+![image](https://user-images.githubusercontent.com/81424793/228811697-8088b50e-36c6-4c4a-99f3-da455e16425a.png)
