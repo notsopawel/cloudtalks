@@ -57,4 +57,4 @@ Requirements:
 
 ## HowTo
 Please place below short instruction, on how to execute the code, with examples.
-![image](https://user-images.githubusercontent.com/81424793/228811697-8088b50e-36c6-4c4a-99f3-da455e16425a.png)
+
